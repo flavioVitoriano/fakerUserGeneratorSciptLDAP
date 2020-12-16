@@ -8,7 +8,7 @@ from faker import Faker
 load_dotenv()
 
 # env vars
-SERVER = os.environ.get("SERVER_URI", "ldap://localhost:389")
+SERVER = os.environ.get("SERVER", "ldap://localhost:389")
 USER = os.environ.get("ADMIN", "admin")
 PASSWORD = os.environ.get("PASSWORD", "123456")
 ORGANIZATION_UNIT = os.environ.get("OU", "Users")
