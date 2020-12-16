@@ -1,0 +1,15 @@
+﻿version: "3.4"
+
+services:
+  ldapserver:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - LDAP_ORGANISATION=company
+      - LDAP_DOMAIN=techinterview.com
+      - LDAP_ADMIN_PASSWORD=123456
+    ports:
+      - 389:389
+    expose:
+      - 389
