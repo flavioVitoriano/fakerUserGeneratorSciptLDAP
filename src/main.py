@@ -30,7 +30,7 @@ class RandomUser:
     def __init__(self, conn, ou, domain, faker, names):
         self.faker = faker
         self.generate_name(names)
-        self.command = f"cn={self.name},ou=Users,dc=techinterview,dc=com"
+        self.command = f"cn={self.name},ou={ou},dc=techinterview,dc=com"
         self.conn = conn
         self.attrs = {"cn": USER, "sn": "AD"}
 
