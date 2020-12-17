@@ -15,7 +15,7 @@ docker-compose up --build -d
 2.  Generate a local env & install dependencies
 
 ```
-virtualenv env
+python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
